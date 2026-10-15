@@ -7,10 +7,10 @@ class Tab1Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final matches = [
-      {'t1': 'Манчестер Сити', 't2': 'Ливерпуль', 'score': '2 : 1', 'min': '68 мин', 'live': true},
-      {'t1': 'Реал Мадрид', 't2': 'Севилья', 'score': '3 : 0', 'min': 'FT', 'live': false},
-      {'t1': 'Бавария', 't2': 'Боруссия Д.', 'score': '1 : 1', 'min': '54 мин', 'live': true},
-      {'t1': 'Интер', 't2': 'Ювентус', 'score': 'Начало 21:45', 'min': 'Скоро', 'live': false},
+      {'t1': 'Manchester City', 't2': 'Liverpool', 'score': '2 : 1', 'min': '68 min', 'live': true},
+      {'t1': 'Real Madrid', 't2': 'Sevilla', 'score': '3 : 0', 'min': 'FT', 'live': false},
+      {'t1': 'Bayern Munich', 't2': 'Dortmund', 'score': '1 : 1', 'min': '54 min', 'live': true},
+      {'t1': 'Inter Milan', 't2': 'Juventus', 'score': 'Kickoff 21:45', 'min': 'Upcoming', 'live': false},
     ];
 
     return Scaffold(
@@ -32,8 +32,8 @@ class Tab1Screen extends StatelessWidget {
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Главный матч тура', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
-                  Text('АПЛ • Тур 8', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                  Text('Match of the Week', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+                  Text('EPL • Matchday 8', style: TextStyle(color: Colors.white70, fontSize: 12)),
                 ],
               ),
             ),

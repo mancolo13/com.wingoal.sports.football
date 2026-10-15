@@ -7,9 +7,9 @@ class Tab3Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final news = [
-      {'title': 'Определились корзины жеребьевки плей-офф Лиги Чемпионов', 'time': '1 час назад'},
-      {'title': 'Звездный полузащитник продлил контракт до 2030 года', 'time': '2 часа назад'},
-      {'title': 'Пресс-конференция тренера перед дерби тура', 'time': '4 часа назад'},
+      {'title': 'Champions League playoff seeding pots announced', 'time': '1 hour ago'},
+      {'title': 'Star midfielder extends contract through 2030', 'time': '2 hours ago'},
+      {'title': 'Manager press conference ahead of local derby', 'time': '4 hours ago'},
     ];
 
     return Scaffold(
@@ -21,7 +21,7 @@ class Tab3Screen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Text('Свежие футбольные новости', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Breaking Football News', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...news.map((n) => Container(
               margin: const EdgeInsets.only(bottom: 12),
